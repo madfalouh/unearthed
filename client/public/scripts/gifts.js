@@ -25,7 +25,7 @@
                     bottomContainer.appendChild(name);
 
                     const pricePoint = document.createElement('p');
-                    pricePoint.textContent = 'Price: ' + gift.pricePoint;
+                    pricePoint.textContent = 'Price: ' + gift.pricepoint;
                     bottomContainer.appendChild(pricePoint);
 
                     const audience = document.createElement('p');

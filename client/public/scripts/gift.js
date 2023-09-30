@@ -6,10 +6,12 @@ const renderGift = async () => {
     const giftContent = document.getElementById('gift-content');
     let gift = data.find(g => g.id === requestedID);
      if (gift) {
+console.log(gift);
+
         document.getElementById('image').src = gift.image;
         document.getElementById('name').textContent = gift.name;
-        document.getElementById('submittedBy').textContent = 'Submitted by: ' + gift.submittedBy;
-        document.getElementById('pricePoint').textContent = 'Price: ' + gift.pricePoint;
+        document.getElementById('submittedBy').textContent = 'Submitted by: ' + gift.submittedby;
+        document.getElementById('pricePoint').textContent = 'Price: ' + gift.pricepoint;
         document.getElementById('audience').textContent = 'Great For: ' + gift.audience;
         document.getElementById('description').textContent = gift.description;
         document.title = `UnEarthed - ${gift.name}`;
