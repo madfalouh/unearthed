@@ -19,7 +19,7 @@ const GiftDetails = () => {
   useEffect(() => {
     const fetchGiftById = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/gifts/${id}`);
+        const response = await fetch(`/gifts/${id}`);
         console.log(response);
 
         if (!response.ok) {

@@ -13,7 +13,7 @@ const App = () => {
     const fetchGifts = async () => {
 
       try {
-        const response = await fetch('http://localhost:3001/gifts');
+        const response = await fetch('/gifts');
         console.log(response);
         const data = await response.json();
         console.log(data);
