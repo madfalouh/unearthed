@@ -1,6 +1,6 @@
 # Unearthed Project
 
-
+This web application, built using Vite and React, is designed to showcase products along with their prices
 
 ## Table of Contents
 - [Features](#features)
