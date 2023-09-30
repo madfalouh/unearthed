@@ -27,7 +27,7 @@ Welcome to the Virtual Community Space project! This project is aimed at creatin
 
 ## Getting Started
 
-To get started with the Virtual Community Space project, follow these steps:
+To get started with the  project, follow these steps:
 
 ### Database Setup
 
