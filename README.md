@@ -2,8 +2,6 @@
 
 
 
-Welcome to the Virtual Community Space project! This project is aimed at creating a virtual community space where users can explore events by location. Whether you're interested in music events, dungeon crawling expeditions, support groups, protests, geocaching spots, or dromedary herders association meetups, this web app will help you find interesting activities in your chosen locations.
-
 ## Table of Contents
 - [Features](#features)
 - [Getting Started](#getting-started)
