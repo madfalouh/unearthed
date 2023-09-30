@@ -18,3 +18,7 @@ This web application, built using Vite and React, is designed to showcase produc
 
 ### Stretch Features
 - An additional search box so the user can sort and filter by product name.
+
+
+
+https://github-production-user-asset-6210df.s3.amazonaws.com/70645288/269502976-f17b9427-4937-442e-a755-f25be4291d22.gif
