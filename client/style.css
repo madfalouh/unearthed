@@ -24,6 +24,7 @@ header {
 .header-left, .header-right {
     display: flex;
     align-items: center;
+   gap :20px ;
 }
 
 img {
@@ -210,4 +211,8 @@ a[role="button"] {
 
 a[role="button"]:hover {
     background-color: #2980b9;
+}
+.selected {
+    border: 2px solid #3498db; /* You can choose any color for the border */
+    box-shadow: 0 0 10px #3498db; /* Optional: add a shadow for more emphasis */
 }

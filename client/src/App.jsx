@@ -1,10 +1,12 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { useRoutes, useLocation } from "react-router-dom";
-import Gifts from "./pages/Gifts";
+import Cars from "./pages/Cars";
 import GiftDetails from "./pages/GiftDetails";
 import PageNotFound from "./pages/PageNotFound";
 import { Link } from "react-router-dom";
+import CarCreationPage from "./pages/CreateCar";
+import UpdateCars from "./pages/UpdateCars";
 
 const App = () => {
   const [gifts, setGifts] = useState([]);
@@ -31,19 +33,23 @@ const App = () => {
   );
 
   useEffect(() => {
-    if (location.pathname.includes("/gift/")) {
-      setSearchTerm(""); // Reset search term when on GiftDetails page
+    if (location.pathname.includes("/cars/")) {
+      setSearchTerm(""); 
     }
   }, [location.pathname]);
 
   let element = useRoutes([
     {
       path: "/",
-      element: <Gifts data={searchTerm ? filteredGifts : gifts} />,
+      element: <CarCreationPage />,
+    },
+  {
+      path: "/cars",
+      element: <Cars />,
     },
     {
-      path: "/gift/:id",
-      element: <GiftDetails data={gifts} />,
+      path: "/cars/:carId",
+      element: <UpdateCars />,
     },
     {
       path: "/*",
@@ -60,19 +66,12 @@ const App = () => {
             <h1>UnEarthed</h1>
           </div>
           <div className="header-right">
-            {
-              location.pathname === "/" ? (
-                <input
-                  className="search-input"
-                  type="text"
-                  placeholder="Search gifts..."
-                  value={searchTerm}
-                  onChange={e => setSearchTerm(e.target.value)}
-                />
-              ) : null
-            }
             <Link to="/">
               <button className="homeBtn">Home</button>
+            </Link>
+&nbsp; &nbsp;&nbsp;
+            <Link to="/cars">
+              <button className="homeBtn">Cars</button>
             </Link>
           </div>
         </div>
